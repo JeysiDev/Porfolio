@@ -14,10 +14,10 @@ function handleFormSubmit(e) {
     const data = Object.fromEntries(formData.entries());
 
     // Initialize EmailJS (make sure the user ID is correct)
-    emailjs.init('your_user_id'); // Replace with your EmailJS user ID
+    emailjs.init('user_-oOH0V8M1l_4odq3O'); // Replace with your EmailJS user ID
 
     // Send email using EmailJS service
-    emailjs.send('your_service_id', 'your_template_id', {
+    emailjs.send('service_hnt20yh', 'template_8njwlle', {
         name: data.name,
         email: data.email,
         subject: data.subject,
