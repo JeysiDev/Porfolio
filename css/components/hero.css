@@ -18,7 +18,9 @@
 }
 
 .profile-img {
-    max-width: 600px;
+    object-fit: contain;
+    width: 400px;
+    height: 400px;
     border: 8px solid var(--white);
     box-shadow: 0 10px 30px rgba(10, 37, 64, 0.1);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
@@ -45,4 +47,73 @@
     margin-top: 2rem;
     display: flex;
     gap: 1rem;
+}
+
+/* Media Queries for Responsiveness */
+
+/* Small Devices (Smartphones, less than 600px) */
+@media (max-width: 600px) {
+    .profile-img {
+        width: 320px;
+        height: 320px;
+    }
+
+    .typed-text {
+        font-size: 1.5rem;
+        margin: 10px 0;
+    }
+
+    .hero-buttons {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .btn {
+        width: 200px;
+    }
+
+    .hero-section {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        padding-top: 70px;
+    }
+
+    .text-center {
+        margin-top: 20px;
+    }
+}
+
+/* Medium Devices (Tablets, 600px to 992px) */
+@media (min-width: 600px) and (max-width: 992px) {
+    .profile-img {
+        width: 400px;
+        height: 400px;
+    }
+
+    .typed-text {
+        font-size: 1.8rem;
+    }
+
+    .hero-buttons {
+        gap: 0.5rem;
+    }
+}
+
+/* Large Devices (Laptops and larger, greater than 992px) */
+@media (min-width: 992px) {
+    .profile-img {
+        width: 400px;
+        height: 400px;
+    }
+
+    .typed-text {
+        font-size: 2rem;
+    }
+
+    .hero-buttons {
+        gap: 1rem;
+    }
 }

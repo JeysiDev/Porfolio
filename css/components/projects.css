@@ -49,3 +49,9 @@
     flex: 1;
     text-align: center;
 }
+
+@media (max-width: 600px) {
+    .img-fluid {
+        width: 100%;
+    }
+}
