@@ -1,0 +1,52 @@
+/* About Section Styles */
+.about-stats {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.stat-item {
+    background-color: var(--white);
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 5px 20px rgba(10, 37, 64, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.stat-item:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 25px rgba(10, 37, 64, 0.15);
+}
+
+.stat-item h3 {
+    color: var(--secondary-color);
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.stat-item p {
+    color: var(--primary-color);
+    font-weight: 500;
+    margin: 0;
+}
+
+.about-info {
+    margin: 2rem 0;
+    padding: 1.5rem;
+    background-color: var(--light-color);
+    border-radius: 10px;
+    border-left: 4px solid var(--secondary-color);
+}
+
+.about-info p {
+    margin-bottom: 0.75rem;
+    color: var(--dark-color);
+}
+
+.about-info strong {
+    color: var(--primary-color);
+    font-weight: 600;
+}

@@ -1,0 +1,117 @@
+/* General Section Styling */
+.messages-section {
+    margin-top: 55px;
+}
+
+/* Title Styling */
+.messages-section h3 {
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.messages {
+    background-color: #fff;
+    width: 100%;
+    height: 60px;
+    position: fixed;
+    z-index: 1000;
+    padding-top: 10px;
+}
+
+/* Row styling for responsive 3 columns layout */
+.messages-section .container .row {
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 60px;
+}
+
+/* Styling for each card */
+.card {
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Soft shadow for card */
+    border-radius: 8px; /* Rounded corners */
+    transition: all 0.3s ease; /* Smooth transition for hover effect */
+    background-color: #fff; /* White background for cards */
+}
+
+/* Card Hover Effect */
+.card:hover {
+    transform: translateY(-5px); /* Lift card on hover */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15); /* Darker shadow on hover */
+}
+
+/* Card Body Styling */
+.card-body {
+    padding: 20px;
+    color: #333;
+}
+
+.card-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #007bff; /* Blue color for titles */
+}
+
+.card-text {
+    font-size: 1rem;
+    color: #555; /* Lighter color for the text */
+}
+
+/* List Group Styling */
+.list-group-item {
+    border: none; /* Remove borders for clean look */
+    background-color: #f9f9f9;
+    padding: 10px 15px;
+    font-size: 0.9rem;
+}
+
+/* Footer Styling */
+.card-footer {
+    display: flex;
+    gap: 8px;
+    background-color: #f9f9f9;
+    border-top: 1px solid #ddd;
+    padding: 15px;
+    text-align: center;
+}
+
+/* Button Styling */
+.card-footer .btn {
+    width: 100%;
+    margin: 0 5px;
+    padding: 8px 20px;
+    font-size: 0.9rem;
+}
+
+.card-footer .btn-danger {
+    background-color: #dc3545;
+    color: #fff;
+    border: none;
+    transition: background-color 0.3s;
+}
+
+.card-footer .btn-outline-secondary {
+    background-color: transparent;
+    color: #252525;
+    border: 1px solid #6c757d;
+    transition: color 0.3s, border-color 0.3s;
+}
+
+/* Button Hover Effects */
+.card-footer .btn-danger:hover {
+    background-color: #c82333;
+}
+
+.card-footer .btn-outline-secondary:hover {
+    color: #131313;
+    border-color: #6c757d;
+}
+
+/* Responsive Styling for Cards */
+@media (max-width: 768px) {
+    .messages-section .container .row {
+        flex-direction: column; /* Stack cards vertically on smaller screens */
+        gap: 15px;
+    }
+}

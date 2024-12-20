@@ -1,0 +1,48 @@
+/* Hero Section Styles */
+.hero-section {
+    height: 100vh;
+    background-color: var(--white);
+    padding-top: 80px;
+    position: relative;
+}
+
+.hero-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(135deg, var(--light-color) 0%, var(--white) 100%);
+    z-index: -1;
+}
+
+.profile-img {
+    max-width: 300px;
+    border: 8px solid var(--white);
+    box-shadow: 0 10px 30px rgba(10, 37, 64, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.profile-img:hover {
+    transform: scale(1.05) rotate(2deg);
+    box-shadow: 0 15px 40px rgba(10, 37, 64, 0.2);
+}
+
+.highlight {
+    color: var(--secondary-color);
+    font-weight: bold;
+}
+
+.typed-text {
+    color: var(--accent-color);
+    font-size: 2rem;
+    margin: 20px 0;
+    min-height: 2.5rem;
+}
+
+.hero-buttons {
+    margin-top: 2rem;
+    display: flex;
+    gap: 1rem;
+}
