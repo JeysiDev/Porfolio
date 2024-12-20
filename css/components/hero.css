@@ -98,8 +98,23 @@
     }
 
     .hero-buttons {
-        gap: 0.5rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
+
+    .hero-section {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        padding-top: 70px;
+    }
+
+    .text-center{
+        margin-top: 20px;
+    }
+
 }
 
 /* Large Devices (Laptops and larger, greater than 992px) */
