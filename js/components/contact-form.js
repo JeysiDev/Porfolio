@@ -1,3 +1,5 @@
+import emailjs from '@emailjs/browser';
+
 function SendMail(event) {
     event.preventDefault(); // Prevent form from submitting normally
     
